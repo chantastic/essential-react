@@ -57,7 +57,7 @@ class Pokemon extends React.Component {
           type="button"
           onClick={() =>
             this.setState(prevState => ({
-              id: prevState - 1
+              id: prevState.id - 1
             }))}
         >
           Previous
@@ -67,7 +67,7 @@ class Pokemon extends React.Component {
           type="button"
           onClick={() =>
             this.setState(prevState => ({
-              id: prevState + 1
+              id: prevState.id + 1
             }))}
         >
           Next
